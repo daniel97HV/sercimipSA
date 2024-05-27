@@ -5,6 +5,29 @@ body {
     font-weight: 400;
 }
 
+:root {
+    --primary: #A6294B;
+    --secondary: #F5F5F5;
+    --light: #A68933;
+    --dark: #02245B;
+}
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand {
+    position: relative;
+    padding-right: 50px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+}
+
+
+
 h1,
 h2, 
 h3, 
@@ -19,6 +42,21 @@ a {
     transition: .3s;
 }
 
+.topbar-right {
+    position: relative;
+    background: var(--primary);
+}
+
+.topbar-right::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    transform: skewX(-30deg);
+    background-color: var(--primary);
+}
 a:hover,
 a:active,
 a:focus {
@@ -680,6 +718,7 @@ a:focus {
 .fact .fact-left h2 {
     color: #A6294B;
 }
+
 
 
 .service {
